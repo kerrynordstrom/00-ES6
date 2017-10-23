@@ -22,10 +22,12 @@ Follow these instructions carefully and in order.
 
 ##### Investigate how `let` and `const` are now used in the code. Where did you need to convert `const` into `let` to make the code work? Can you identify any patterns/similarities?
 
-(Put your answer here)
+I needed to convert const to let for the allProducts and totalClicks global variables as well as some local function variables.  
+
+This is because somewhere else in the script, the script was attempting to reassign the variable whereas this can only be done with let and not const.  Const only allows manipulation of a property of that variable, in the case of changing the value of a property of an object, should that const be assigned an object rather than a value.
 
 ---
 
 ##### How did it go with making the adaptation from concatenations to template literal notation? Do you think you'll mostly use template literal notation from now on?
 
-(Put your answer here)
+It was labor intensive going backwards from old school concatenation, and nearly just as much typing to add in the grave marks and additional notation, but it will definitely help forgo the frustration of missed quotation marks, spaces, and plus signs as a whole.  I'll probably use it.
